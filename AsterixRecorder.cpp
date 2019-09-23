@@ -83,7 +83,6 @@ void AsterixRecorder::RecvPacket(void)
 
 		RecvSocket->readDatagram(RecvData, RecvDataSize);
 		ui.plainTextEdit->appendPlainText("UDP packet received. Packet size: " + QString::number(RecvDataSize) + " bytes.");
-		//ui.plainTextEdit->appendPlainText("Category: " + QString::number(RecvData[0]));
 		if (OutFile.is_open())
 		{
 			if ((RecvData[0] == 1) || (RecvData[0] == 2) || (RecvData[0] == -6))
