@@ -41,19 +41,19 @@ public:
     {
         if (AsterixRecorderClass->objectName().isEmpty())
             AsterixRecorderClass->setObjectName(QString::fromUtf8("AsterixRecorderClass"));
-        AsterixRecorderClass->resize(600, 400);
+        AsterixRecorderClass->resize(650, 400);
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(AsterixRecorderClass->sizePolicy().hasHeightForWidth());
         AsterixRecorderClass->setSizePolicy(sizePolicy);
-        AsterixRecorderClass->setMinimumSize(QSize(600, 400));
-        AsterixRecorderClass->setMaximumSize(QSize(600, 400));
+        AsterixRecorderClass->setMinimumSize(QSize(650, 400));
+        AsterixRecorderClass->setMaximumSize(QSize(650, 400));
         centralWidget = new QWidget(AsterixRecorderClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(0, 0, 601, 401));
+        tabWidget->setGeometry(QRect(0, 0, 650, 401));
         QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -63,13 +63,13 @@ public:
         tab->setObjectName(QString::fromUtf8("tab"));
         EdRecFileName = new QLineEdit(tab);
         EdRecFileName->setObjectName(QString::fromUtf8("EdRecFileName"));
-        EdRecFileName->setGeometry(QRect(70, 10, 421, 20));
+        EdRecFileName->setGeometry(QRect(70, 10, 461, 20));
         label = new QLabel(tab);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(10, 10, 47, 13));
         BtnSelRecFile = new QPushButton(tab);
         BtnSelRecFile->setObjectName(QString::fromUtf8("BtnSelRecFile"));
-        BtnSelRecFile->setGeometry(QRect(504, 10, 81, 23));
+        BtnSelRecFile->setGeometry(QRect(540, 10, 101, 23));
         label_2 = new QLabel(tab);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(10, 40, 31, 16));
@@ -79,14 +79,14 @@ public:
         EdRecvPort->setMaxLength(5);
         plainTextEdit = new QPlainTextEdit(tab);
         plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
-        plainTextEdit->setGeometry(QRect(10, 110, 581, 261));
+        plainTextEdit->setGeometry(QRect(2, 100, 641, 271));
         plainTextEdit->setReadOnly(true);
         BtnListen = new QPushButton(tab);
         BtnListen->setObjectName(QString::fromUtf8("BtnListen"));
-        BtnListen->setGeometry(QRect(504, 40, 81, 23));
+        BtnListen->setGeometry(QRect(540, 40, 101, 23));
         BtnRecord = new QPushButton(tab);
         BtnRecord->setObjectName(QString::fromUtf8("BtnRecord"));
-        BtnRecord->setGeometry(QRect(504, 70, 81, 23));
+        BtnRecord->setGeometry(QRect(540, 70, 101, 23));
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
