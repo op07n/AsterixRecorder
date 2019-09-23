@@ -47,6 +47,12 @@ void AsterixRecorder::BtnListen_Clicked(void)
 
 void AsterixRecorder::BtnRecord_Clicked(void)
 {
+	if (ui.EdRecFileName->text().length() == 0)
+	{
+		MessageBox((HWND)this->winId(), (LPCWSTR)L"Please select output file", (LPCWSTR)L"Error", MB_OK + MB_ICONEXCLAMATION);
+		return;
+	}
+
 	if ((ui.BtnRecord->text() == "Start recording") && (ui.EdRecFileName->text().length() != 0))
 	{
 		char* RecFileName;
