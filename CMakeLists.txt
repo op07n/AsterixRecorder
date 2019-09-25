@@ -10,9 +10,15 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt5Core REQUIRED)
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Network REQUIRED)
+
+ADD_DEFINITIONS (${QT_DEFINITIONS})
+
+
+find_package (Qt5 REQUIRED COMPONENTS Widgets Core Gui Network)
+
+# find_package(Qt5Core REQUIRED)
+# find_package(Qt5Gui REQUIRED)
+# find_package(Qt5Network REQUIRED)
 
 INCLUDE_DIRECTORIES(".\\GeneratedFiles")
 
