@@ -14,6 +14,7 @@ find_package(Qt5Core REQUIRED)
 find_package(Qt5Gui REQUIRED)
 find_package(Qt5Network REQUIRED)
 
+INCLUDE_DIRECTORIES(".\\GeneratedFiles")
 
 set(SRCS main.cpp
          AsterixRecorder.cpp
