@@ -12,7 +12,7 @@ set(CMAKE_AUTOMOC ON)
 
 # Find the Qt libraries
 find_package(Qt5Core CONFIG REQUIRED)
-find_package(Qt5Sql CONFIG REQUIRED)
+find_package(Qt5Network CONFIG REQUIRED)
 
 set(SRCS main.cpp
          AsterixRecorder.cpp
