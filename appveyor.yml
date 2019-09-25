@@ -12,7 +12,7 @@ build:
   project: AsterixRecorder.vcxproj
   
 before_build:
-  - ps: $Env:PLATFORM_TOOLSET="v142"
+  - ps: $Env:PLATFORM_TOOLSET="v141"
 after_build:
   - 7z a AsterixRecorder.zip %APPVEYOR_BUILD_FOLDER%\Release\*.* "C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\x86\ucrtbase.dll"
 
