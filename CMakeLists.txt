@@ -30,8 +30,9 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 )
 
 
+qt5_use_modules(AsterixRecorder Widgets Core Gui Network)
 
-target_link_libraries(${PROJECT_NAME}
-    ${Qt5Core_LIBRARIES}
-    ${Qt5Network_LIBRARIES}
-)
+# target_link_libraries(${PROJECT_NAME}
+#     ${Qt5Core_LIBRARIES}
+#     ${Qt5Network_LIBRARIES}
+# )
