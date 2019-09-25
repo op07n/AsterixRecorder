@@ -5,8 +5,11 @@ image: Visual Studio 2017
 configuration:
 - Release
 
-platform:
+platform: 
 - x64
+  qtdir: C:\Qt\5.13.0\msvc2017_64
+      
+
 
 build:
   project: AsterixRecorder.vcxproj
