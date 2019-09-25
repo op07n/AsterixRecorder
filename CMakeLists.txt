@@ -29,5 +29,5 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 	CXX_STANDARTD_REQUIRED ON
 )
 
-target_link_libraries(${PROJECT_NAME}   Qt5::Core
+target_link_libraries(${PROJECT_NAME}   Qt5::Core Qt5::Qt5Gui Qt5::Qt5Network
 )
