@@ -49,7 +49,7 @@ void AsterixRecorder::BtnRecord_Clicked(void)
 {
 	if (ui.EdRecFileName->text().length() == 0)
 	{
-		MessageBox((HWND)this->winId(), (LPCWSTR)L"Please select output file", (LPCWSTR)L"Error", MB_OK + MB_ICONEXCLAMATION);
+		MessageBox((HWND)this->winId(), (LPCSTR)L"Please select output file", (LPCSTR)L"Error", MB_OK + MB_ICONEXCLAMATION);
 		return;
 	}
 
