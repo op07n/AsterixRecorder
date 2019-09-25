@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 
-project(chrome-password-reader)
+project(AsterixRecorder)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -15,9 +15,8 @@ find_package(Qt5Core CONFIG REQUIRED)
 find_package(Qt5Sql CONFIG REQUIRED)
 
 set(SRCS main.cpp
-         AsterixRecorder.cpp
-         UDPListener.cpp)
-
+         AsterixRecorder.cpp)
+         
 add_executable(${PROJECT_NAME} ${SRCS})
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
