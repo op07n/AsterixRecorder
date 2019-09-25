@@ -18,7 +18,7 @@ set(SRCS main.cpp
          AsterixRecorder.cpp
          UDPListener.cpp)
 	 
-set_property(SOURCE UDPListener.h PROPERTY SKIP_AUTOMOC ON)	 
+set_property(SOURCE UDPListener.cpp PROPERTY SKIP_AUTOMOC ON)	 
          
 add_executable(${PROJECT_NAME} ${SRCS})
 
