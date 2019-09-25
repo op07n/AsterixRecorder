@@ -11,11 +11,11 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 
 # Find the Qt libraries
-find_package(Qt5Core CONFIG REQUIRED)
-find_package(Qt5Gui CONFIG REQUIRED)
-find_package(Qt5Network CONFIG REQUIRED)
+# find_package(Qt5Core CONFIG REQUIRED)
+# find_package(Qt5Gui CONFIG REQUIRED)
+# find_package(Qt5Network CONFIG REQUIRED)
 
-# find_package(Qt5 COMPONENTS Core Widgets Network CONFIG REQUIRED)
+find_package(Qt5 COMPONENTS Core Widgets Network CONFIG REQUIRED)
 
 set(SRCS main.cpp
          AsterixRecorder.cpp
@@ -30,5 +30,5 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 	CXX_STANDARTD_REQUIRED ON
 )
 
-target_link_libraries(${PROJECT_NAME}   Qt5::Core Qt5::Qt5Gui Qt5::Qt5Network
+target_link_libraries(${PROJECT_NAME}   Qt5::Qt5Network
 )
