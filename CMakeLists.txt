@@ -17,6 +17,8 @@ find_package(Qt5Sql CONFIG REQUIRED)
 set(SRCS main.cpp
          AsterixRecorder.cpp
          UDPListener.cpp)
+	 
+set_property(SOURCE UDPListener.h PROPERTY SKIP_AUTOMOC ON)	 
          
 add_executable(${PROJECT_NAME} ${SRCS})
 
