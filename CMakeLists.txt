@@ -15,7 +15,8 @@ find_package(Qt5Core CONFIG REQUIRED)
 find_package(Qt5Sql CONFIG REQUIRED)
 
 set(SRCS main.cpp
-         AsterixRecorder.cpp)
+         AsterixRecorder.cpp
+         UDPListener.cpp)
          
 add_executable(${PROJECT_NAME} ${SRCS})
 
