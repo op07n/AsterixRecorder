@@ -69,11 +69,11 @@ artifacts:
   - path: '%PROJECT_NAME%-win-%platform%.zip'
     name: artifacts
     
-# deploy:
-#   release: v$(appveyor_build_version)
-#   description: Chrome password export tool for Windows
-#   tag: v$(appveyor_build_version)
-#   provider: GitHub
-#   auth_token:
-#     secure: PTmCCvHOYwSne/qGWheaYLb15X89BkUzh/hi8Zem+P3oGsLn6pAMuY21IbpYk83I
-#  artifact: '%PROJECT_NAME%-win-%platform%.zip'
+deploy:
+  release: v$(appveyor_build_version)
+  description: Asterix recorder
+  tag: v$(appveyor_build_version)
+  provider: GitHub
+  auth_token:
+     secure: yrM69KAMKsN0o1btzkUu5VaJuPoP5UeLEjXAL5Mk1/30WiPKeryMi0GE/PcIy6DO
+  artifact: '%PROJECT_NAME%-win-%platform%.zip'
