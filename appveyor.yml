@@ -9,7 +9,7 @@ platform:
 - x64
 
 build:
-  project: AsterixRecorder
+  project: AsterixRecorder.vcxproj
   
 before_build:
   - ps: $Env:PLATFORM_TOOLSET="v142"
